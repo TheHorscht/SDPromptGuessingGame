@@ -1,1 +1,5 @@
-.csv
+__pycache__
+*.csv
+*.txt
+parse_word_List.py
+output
