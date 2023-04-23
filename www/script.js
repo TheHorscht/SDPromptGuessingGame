@@ -63,11 +63,10 @@ function getNext() {
     imgs[i].src = `loading.gif`;
   }
   answer = "";
-  fetch(`/output/${randIndex}/info.txt`).then(response => response.text()).then(data => {
+  fetch(`output/${randIndex}/info.txt`).then(response => response.text()).then(data => {
     answer = data;
-    console.log(answer);
     for(let i = 0; i < numImages; i++) {
-      imgs[i].src = `/output/${randIndex}/${i}.png`;
+      imgs[i].src = `output/${randIndex}/${i}.jpg`;
     }
     shouldGuess = true;
   });
