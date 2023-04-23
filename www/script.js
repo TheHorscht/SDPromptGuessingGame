@@ -5,7 +5,7 @@ const output = document.getElementById('output');
 
 let answer = "";
 let shouldGuess = false;
-const numOutputs = 500;
+const numOutputs = 492;
 
 guessButton.addEventListener('click', ev => {
   guess(guessInput.value);

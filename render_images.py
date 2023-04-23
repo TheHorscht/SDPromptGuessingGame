@@ -14,7 +14,7 @@ num_iterations = 500
 for j in range(num_iterations):
   payload = {
     "prompt": " ".join(random.sample(nouns, 5)),
-    "negative_prompt": "EasyNegative",
+    "negative_prompt": "nsfw, sex, porn, naked, hentai",
     "sampler_name": "UniPC",
     "batch_size": 4,
     "steps": 14
