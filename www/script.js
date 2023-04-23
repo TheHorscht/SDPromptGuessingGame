@@ -5,7 +5,7 @@ const output = document.getElementById('output');
 
 let answer = "";
 let shouldGuess = false;
-const numOutputs = 100;
+const numOutputs = 500;
 
 guessButton.addEventListener('click', ev => {
   guess(guessInput.value);
@@ -33,7 +33,7 @@ function guess(str) {
   }
   let matches = 0;
   // Take only the first 3 words that are separated by a space
-  const guessWords = str.split(' ').filter((_,i) => i < 3);
+  const guessWords = str.split(' ').filter((_,i) => i < 5);
   const alreadyMatched = {};
   const answers = answer.split(' ');
   for(const word of answers) {
@@ -44,7 +44,7 @@ function guess(str) {
       }
     }
   }
-  displayInfo(`Your guess was: ${capitalizeWords(str)}\nThe actual prompt was: ${capitalizeWords(answer)}\nYou got ${matches} correct!`);
+  displayInfo(`Your guess was: ${capitalizeWords(guessWords.join(' '))}\nThe actual prompt was: ${capitalizeWords(answer)}\nYou got ${matches} correct!`);
   guessInput.value = '';
   shouldGuess = false;
 }
