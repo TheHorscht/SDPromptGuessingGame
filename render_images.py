@@ -10,11 +10,11 @@ from words import nouns, verbs, adjectives
 
 url = "http://127.0.0.1:7860"
 
-num_iterations = 100
+num_iterations = 200
 
 for j in range(num_iterations):
   payload = {
-    "prompt": f"{random.choice(nouns)} {random.choice(nouns)} {random.choice(nouns)}",
+    "prompt": f"{random.choice(nouns)} {random.choice(nouns)} {random.choice(nouns)} {random.choice(nouns)} {random.choice(nouns)}",
     "negative_prompt": "EasyNegative",
     "sampler_name": "UniPC",
     "batch_size": 4,
