@@ -1,0 +1,22 @@
+{
+  "name": "x",
+  "version": "0.1.0",
+  "description": "Helo :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheHorscht/SDPromptGuesser.git"
+  },
+  "author": "TheHorscht <realhorscht+github@gmail.com> (https://github.com/TheHorscht)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheHorscht/SDPromptGuesser/issues"
+  },
+  "homepage": "https://github.com/TheHorscht/SDPromptGuesser#readme",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
